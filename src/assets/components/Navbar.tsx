@@ -1,11 +1,12 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
 import logo from "../logo.webp";
+import ColorModeSwitch from "./ColorModeSwitch";
 
 const Navbar = () => {
   return (
-    <HStack>
+    <HStack justifyContent="space-between" padding="px">
       <Image src={logo} boxSize="60px"></Image>
-      <Text>Navbar</Text>
+      <ColorModeSwitch />
     </HStack>
   );
 };
